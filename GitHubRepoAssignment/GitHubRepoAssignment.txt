@@ -1,0 +1,30 @@
+
+Nathan@Nathan-PC MINGW64 ~
+$ git remote add origin https://github.com/Mountnview/GitHubRepoAssignment.git
+fatal: Not a git repository (or any of the parent directories): .git
+
+Nathan@Nathan-PC MINGW64 ~
+$ git push -u origin master
+fatal: Not a git repository (or any of the parent directories): .git
+
+Nathan@Nathan-PC MINGW64 ~
+$ cd GitHubRepoAssignment.git
+bash: cd: GitHubRepoAssignment.git: No such file or directory
+
+Nathan@Nathan-PC MINGW64 ~
+$ mkdir GitHubRepoAssignment
+mkdir: cannot create directory ‘GitHubRepoAssignment’: File exists
+
+Nathan@Nathan-PC MINGW64 ~
+$ cd GitHubRepoAssignment
+
+Nathan@Nathan-PC MINGW64 ~/GitHubRepoAssignment (master)
+$ git remote add origin https://github.com/Mountnview/GitHubRepoAssignment.git
+
+Nathan@Nathan-PC MINGW64 ~/GitHubRepoAssignment (master)
+$ git push -u origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/Mountnview/GitHubRepoAssignment.git'
+
+Nathan@Nathan-PC MINGW64 ~/GitHubRepoAssignment (master)
+$

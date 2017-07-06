@@ -1,0 +1,92 @@
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+C:\Users\Nathan>cd Desktop
+
+C:\Users\Nathan\Desktop>md test
+
+C:\Users\Nathan\Desktop>cd test
+
+C:\Users\Nathan\Desktop\test>md index.html
+
+C:\Users\Nathan\Desktop\test>md styles.css
+
+C:\Users\Nathan\Desktop\test>md commands.txt
+
+C:\Users\Nathan\Desktop\test>copy index.html newindex_2.html
+index.html\*
+The system cannot find the file specified.
+        0 file(s) copied.
+
+C:\Users\Nathan\Desktop\test>copy NUL index.html newindex_2.html
+The syntax of the command is incorrect.
+
+C:\Users\Nathan\Desktop\test>copy NUL index.html index_2.html
+The syntax of the command is incorrect.
+
+C:\Users\Nathan\Desktop\test>xcopy .\index.html .\index_2.html /e /s /i
+0 File(s) copied
+
+C:\Users\Nathan\Desktop\test>cd ..
+
+C:\Users\Nathan\Desktop>cd test
+
+C:\Users\Nathan\Desktop\test>del styles.css
+C:\Users\Nathan\Desktop\test\styles.css\*, Are you sure (Y/N)? Y
+
+C:\Users\Nathan\Desktop\test>cd ..
+
+C:\Users\Nathan\Desktop>md destination
+
+C:\Users\Nathan\Desktop>cd test
+
+C:\Users\Nathan\Desktop\test> .\html_2.txt ..\destination
+'.\html_2.txt' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Nathan\Desktop\test>move .\html_2.txt ..\destination
+The system cannot find the file specified.
+
+C:\Users\Nathan\Desktop\test>move .\html_2.txt ..c:\Users\Nathan\Desktop\destina
+tion
+The filename, directory name, or volume label syntax is incorrect.
+
+C:\Users\Nathan\Desktop\test>move .\html_2.txt ..\Users\Nathan\Desktop\destinati
+on
+The system cannot find the file specified.
+
+C:\Users\Nathan\Desktop\test>move .\html_2.txt .destination\html_2.txt
+The system cannot find the file specified.
+
+C:\Users\Nathan\Desktop\test>move html_2.txt c:\Users\Nathan\Desktop\destination
+
+The system cannot find the file specified.
+
+C:\Users\Nathan\Desktop\test>move html_2.html c:\Users\Nathan\Desktop\destinatio
+n
+The system cannot find the file specified.
+
+C:\Users\Nathan\Desktop\test>move index_2.html c:\User\Nathan\Desktop\destinatio
+n
+The system cannot find the path specified.
+        0 dir(s) moved.
+
+C:\Users\Nathan\Desktop\test>
+C:\Users\Nathan\Desktop\test>Command | clip
+'Command' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Nathan\Desktop\test>clip
+
+INFO: Type "CLIP /?" for usage.
+
+C:\Users\Nathan\Desktop\test>move index_2.html c:\Users\Nathan\Desktop\destinati
+on
+        1 dir(s) moved.
+
+C:\Users\Nathan\Desktop\test>cd ..
+
+C:\Users\Nathan\Desktop>DEL destination
+C:\Users\Nathan\Desktop\destination\*, Are you sure (Y/N)? Y
+
+C:\Users\Nathan\Desktop>
